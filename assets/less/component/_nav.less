@@ -1,0 +1,163 @@
+@import "../global/_color.less";
+@import "../global/_mixins.less";
+@import "../global/_font.less";
+
+
+.open{
+    display: flex !important;
+}
+
+@media screen and (min-width: 320px) {
+  nav {
+    .flex-cross--center;
+    flex-direction: column;
+    padding: 10px 30px 10px 29px;
+    border-bottom: 2px solid @_gray-6;
+    position: relative;
+  }
+
+  .logo {
+    &-container {
+      .flex-cross--center;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .menu-link__list ul li{
+      margin-bottom: 10px;
+  }
+
+  .menu {
+    &-container {
+      display: none;
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 2px solid @_gray-6;
+      position: absolute;
+      left: 0;
+      top: 100%+2px;
+      .montserrat--bold;
+      font-weight: 700;
+      font-size: 14px;
+      background-color: @_white-0;
+    }
+
+    &-link {
+      &__list {
+        .flex-cross--center;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      &__item {
+        color: @_black-1;
+        text-transform: uppercase;
+      }
+
+      &--active {
+        color: @_purple-0;
+      }
+    }
+  }
+
+  .icon {
+    &-container {
+      .flex-main--around;
+    }
+    &-wrapper{
+        width: 100%;
+    }
+
+    &-link {
+      color: @_black-1;
+
+      &__element {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 425px) {
+  nav {
+    .flex-main--between;
+    flex-direction: row;
+  }
+
+  .logo {
+    &-container {
+      margin-bottom: 10px;
+    }
+  }
+
+  .icon {
+    &-wrapper {
+      width: 30%;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    &-container {
+      display: block;
+      border: none;
+      width: auto;
+      flex-grow: 1;
+      max-width: 892px;
+      position: initial;
+    }
+
+    &-link {
+      &__list {
+        .flex-main--between;
+        flex-direction: row;
+        padding: 15px 30px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  #menu-button-container {
+    display: none;
+  }
+
+  .icon {
+    &-container {
+      .flex-main--end;
+    }
+    &-wrapper{
+        width: 110px;
+    }
+
+    &-link {
+      margin-left: 30px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .logo {
+    &-container {
+      margin-bottom: 0;
+    }
+  }
+
+  .icon {
+    &-link {
+      &__element {
+        font-size: 27px;
+      }
+    }
+  }
+}
+
