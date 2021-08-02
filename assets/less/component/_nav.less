@@ -2,9 +2,8 @@
 @import "../global/_mixins.less";
 @import "../global/_font.less";
 
-
-.open{
-    display: flex !important;
+.open {
+  display: flex !important;
 }
 
 @media screen and (min-width: 320px) {
@@ -24,8 +23,12 @@
     }
   }
 
-  .menu-link__list ul li{
-      margin-bottom: 10px;
+  .menu-link__list ul li {
+    margin-bottom: 10px;
+  }
+
+  .menu-link__item:hover {
+    color: @_purple-0;
   }
 
   .menu {
@@ -49,7 +52,7 @@
         flex-direction: column;
         width: 100%;
       }
-      
+
       &__item {
         color: @_black-1;
         text-transform: uppercase;
@@ -65,20 +68,26 @@
     &-container {
       .flex-main--around;
     }
-    &-wrapper{
-        width: 100%;
+    &-wrapper {
+      width: 100%;
     }
 
     &-link {
       color: @_black-1;
-
       &__element {
-        font-size: 20px;
+        font-size: 30px;
+        line-height: 22px;
+        color: #000000;
+        text-align: center;
       }
     }
   }
-}
 
+  .icon-container li:first-child{
+    margin-right: 20px;
+  }
+
+}
 
 @media screen and (min-width: 425px) {
   nav {
@@ -98,7 +107,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 1024px) {
   .menu {
@@ -129,8 +137,8 @@
     &-container {
       .flex-main--end;
     }
-    &-wrapper{
-        width: 110px;
+    &-wrapper {
+      width: 110px;
     }
 
     &-link {
@@ -138,7 +146,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 1440px) {
   nav {
@@ -160,4 +167,3 @@
     }
   }
 }
-
