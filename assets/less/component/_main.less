@@ -7,16 +7,131 @@
     .flex-main--center;
     width: 100%;
     margin-top: 30px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
   .banner {
     &-container {
-      margin-bottom: 75px;
+      margin-bottom: 73px;
     }
 
     &-image {
       margin-bottom: 10px;
+    }
+    &-left {
+      position: relative;
+
+      &-content {
+        .flex-wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 42.8%;
+        .pacifico--regular;
+        font-size: 20px;
+        letter-spacing: 0.1px;
+
+        position: absolute;
+        bottom: 28%;
+        right: 12.25%;
+      }
+
+      &-text {
+        width: 100%;
+        color: @_black-0;
+      }
+
+      &-button {
+        justify-content: center;
+        padding: 10px;
+        margin-right: 20px;
+        margin-top: 3px;
+
+        .montserrat--regular;
+        font-size: 14px;
+        color: @_white-0;
+        text-transform: capitalize;
+        background-color: @_purple-0;
+      }     
+    }
+
+    &-right {
+      &-item {
+        position: relative;
+      }
+
+      &-top {
+        &-content {
+          .flex-main--center;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 83.33%;
+          height: 130px;
+          padding: 20px 0 15px 28px;
+
+          .montserrat--regular;
+          font-size: 20px;
+          text-transform: uppercase;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          box-sizing: border-box;
+        }
+
+        &-text {
+          color: @_gray-8;
+          font-size: 16px;
+          letter-spacing: 3px;
+          margin-top: 5px;
+        }
+
+        &-large {
+          .montserrat--bold;
+          color: @_black-0;
+          margin-top: 0px;
+        }
+      }
+
+      &-bottom {
+        &-content {
+          position: absolute;
+          top: 120px;
+          left: 40px;
+          box-sizing: border-box;
+
+          .montserrat--regular;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+
+        &-text {
+          .montserrat--regular;
+          color: @_gray-8;
+          font-size: 16px;
+          letter-spacing: 3px;
+        }
+
+        &-large {
+          .montserrat--bold;
+          color: @_black-0;
+          margin-bottom: 14px;
+          font-size: 21px;
+          letter-spacing: -0.6px;
+        }
+
+        &-button {
+          justify-content: center;
+          padding: 10px;       
+
+          .montserrat--regular;
+          font-size: 14px;
+          color: @_white-0;
+          text-transform: capitalize;
+          background-color: @_purple-0;         
+        }        
+      }
     }
   }
 
@@ -163,8 +278,8 @@
       .flex-main--around;
     }
     &-card {
-        width: 50%;        
-    }  
+      width: 50%;
+    }
   }
 }
 

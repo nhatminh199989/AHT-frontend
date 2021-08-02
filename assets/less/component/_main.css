@@ -47,13 +47,125 @@
     justify-content: center;
     width: 100%;
     margin-top: 30px;
+    padding: 0 10px;
     box-sizing: border-box;
   }
   .banner-container {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
   .banner-image {
     margin-bottom: 10px;
+  }
+  .banner-left {
+    position: relative;
+  }
+  .banner-left-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 42.8%;
+    font-family: Pacifico;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    bottom: 28%;
+    right: 12.25%;
+  }
+  .banner-left-text {
+    width: 100%;
+    color: #222;
+  }
+  .banner-left-button {
+    justify-content: center;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 3px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #8262B5;
+  }
+  .banner-right-item {
+    position: relative;
+  }
+  .banner-right-top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 83.33%;
+    height: 130px;
+    padding: 20px 0 15px 28px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+  }
+  .banner-right-top-text {
+    color: #616161;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+  }
+  .banner-right-top-large {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    margin-top: 0px;
+  }
+  .banner-right-bottom-content {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .banner-right-bottom-text {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #616161;
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+  .banner-right-bottom-large {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #222;
+    margin-bottom: 14px;
+    font-size: 21px;
+    letter-spacing: -0.6px;
+  }
+  .banner-right-bottom-button {
+    justify-content: center;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: capitalize;
+    background-color: #8262B5;
   }
   .feature-container {
     display: flex;
