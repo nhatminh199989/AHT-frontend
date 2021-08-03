@@ -258,6 +258,7 @@ button {
     margin-bottom: 0;
   }
   .icon-link__element {
+    cursor: pointer;
     font-size: 27px;
   }
 }
