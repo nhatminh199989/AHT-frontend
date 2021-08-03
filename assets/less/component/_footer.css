@@ -151,7 +151,6 @@
     flex-direction: column;
   }
   .footer-location-container {
-    justify-content: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -184,17 +183,19 @@
     margin-top: 22px;
   }
   .footer-location-info {
-    color: #FFF;
+    color: #828282;
     width: 100%;
     max-width: 200px;
   }
   .footer-location-info:hover {
     text-decoration: underline;
+    color: white;
   }
   .footer-location-info a {
-    color: #FFF;
+    color: #828282;
   }
   .footer-location-info a:hover {
+    color: white;
     text-decoration: underline;
   }
   .footer-down {

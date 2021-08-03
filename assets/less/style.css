@@ -467,6 +467,7 @@ button {
     font-style: normal;
     display: flex;
     font-size: 12px;
+    font-weight: 400;
     cursor: pointer;
     text-transform: uppercase;
   }
@@ -894,7 +895,6 @@ button {
     flex-direction: column;
   }
   .footer-location-container {
-    justify-content: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -927,17 +927,19 @@ button {
     margin-top: 22px;
   }
   .footer-location-info {
-    color: #FFF;
+    color: #828282;
     width: 100%;
     max-width: 200px;
   }
   .footer-location-info:hover {
     text-decoration: underline;
+    color: white;
   }
   .footer-location-info a {
-    color: #FFF;
+    color: #828282;
   }
   .footer-location-info a:hover {
+    color: white;
     text-decoration: underline;
   }
   .footer-down {
