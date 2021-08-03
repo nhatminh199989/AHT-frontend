@@ -7,13 +7,13 @@
     .flex-main--center;
     width: 100%;
     margin-top: 30px;
-    padding: 0 10px;
     box-sizing: border-box;
   }
 
   .banner {
     &-container {
       margin-bottom: 73px;
+      padding: 0 15px;
     }
 
     &-image {
@@ -23,18 +23,12 @@
       position: relative;
 
       &-content {
-        .flex-wrap;
-        align-items: flex-end;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 42.8%;
+        text-align: right;
         .pacifico--regular;
-        font-size: 20px;
-        letter-spacing: 0.1px;
-
+        font-size: 30px;
         position: absolute;
         bottom: 28%;
-        right: 12.25%;
+        right: 13%;
       }
 
       &-text {
@@ -47,13 +41,12 @@
         padding: 10px;
         margin-right: 20px;
         margin-top: 3px;
-
         .montserrat--regular;
         font-size: 14px;
         color: @_white-0;
         text-transform: capitalize;
         background-color: @_purple-0;
-      }     
+      }
     }
 
     &-right {
@@ -69,7 +62,6 @@
           width: 83.33%;
           height: 130px;
           padding: 20px 0 15px 28px;
-
           .montserrat--regular;
           font-size: 20px;
           text-transform: uppercase;
@@ -123,14 +115,14 @@
 
         &-button {
           justify-content: center;
-          padding: 10px;       
+          padding: 10px;
 
           .montserrat--regular;
           font-size: 14px;
           color: @_white-0;
           text-transform: capitalize;
-          background-color: @_purple-0;         
-        }        
+          background-color: @_purple-0;
+        }
       }
     }
   }
@@ -175,6 +167,14 @@
   }
 
   .product {
+    &-container {
+      max-width: 1170px;
+      width: 100%;
+      padding: 0 15px;
+      margin: auto;
+      box-sizing: border-box;
+    }
+
     &-card {
       margin-bottom: 43px;
       width: 100%;
@@ -274,27 +274,19 @@
     }
   }
   .product {
-    &-container {
-      .flex-main--around;
-    }
     &-card {
       width: 50%;
     }
   }
 }
 
-@media screen and (min-width: 760px){
+@media screen and (min-width: 760px) {
   .product {
-    &-container {
-      .flex-main--around;
-    }
     &-card {
       width: 50%;
     }
-  }  
+  }
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .banner {
@@ -326,10 +318,6 @@
     }
     &-summary {
       .flex-cross--start;
-    }
-
-    &-container {
-      .flex-main--between;
     }
   }
 
@@ -366,10 +354,6 @@
   }
 
   .product {
-    &-container {
-      .flex-main--between;
-    }
-
     &-summary {
       .flex-cross--start;
     }
@@ -377,7 +361,6 @@
     &-star {
       &-container {
         display: block;
-
         font-size: 11px;
       }
     }

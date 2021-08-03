@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-body{
+body {
   max-width: 100%;
 }
 
@@ -32,11 +32,18 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  width: 100%;
 }
 
 .col (@width) {
   width: @width;
   padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
   box-sizing: border-box;
 }
