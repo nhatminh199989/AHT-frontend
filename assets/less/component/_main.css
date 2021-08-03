@@ -308,6 +308,16 @@
     width: 50%;
   }
 }
+@media screen and (min-width: 760px) {
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .product-card {
+    width: 33.33%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .banner-container {
     display: flex;
