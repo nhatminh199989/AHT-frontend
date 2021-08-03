@@ -201,7 +201,6 @@
   .product-container {
     max-width: 1170px;
     width: 100%;
-    padding: 0 0px;
     margin: auto;
     box-sizing: border-box;
   }
@@ -209,7 +208,6 @@
     margin-bottom: 43px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 15px;
   }
   .product-image-container {
     line-height: 0;
@@ -236,7 +234,9 @@
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
+    display: flex;
     font-size: 12px;
+    cursor: pointer;
     text-transform: uppercase;
   }
   .product-cart-button:hover {
@@ -292,6 +292,9 @@
     align-items: center;
   }
   .product-card {
+    margin-bottom: 43px;
+    box-sizing: border-box;
+    padding: 0 15px;
     width: 50%;
   }
 }
