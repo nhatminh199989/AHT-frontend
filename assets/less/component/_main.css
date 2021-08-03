@@ -51,7 +51,7 @@
   }
   .banner-container {
     margin-bottom: 73px;
-    padding: 0 15px;
+    width: 100%;
   }
   .banner-image {
     margin-bottom: 10px;
@@ -201,7 +201,7 @@
   .product-container {
     max-width: 1170px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 0px;
     margin: auto;
     box-sizing: border-box;
   }
@@ -304,8 +304,7 @@
   .banner-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
     max-width: 1140px;
   }
   .banner-left {
