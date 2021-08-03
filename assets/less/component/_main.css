@@ -315,7 +315,7 @@
     justify-content: space-around;
   }
   .product-card {
-    width: 33.33%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1024px) {
