@@ -44,6 +44,8 @@
   footer {
     width: 100%;
     padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: Montserrat, sans-serif;
     background-color: #222;
     box-sizing: border-box;
@@ -60,15 +62,12 @@
   .footer-about {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     font-family: Montserrat, sans-serif;
   }
   .footer-title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 80%;
     height: 48px;
     margin-bottom: 20px;
@@ -115,7 +114,7 @@
   .footer-nav-right {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
   .footer-nav-left {
     width: 54%;
@@ -253,8 +252,6 @@
   .footer-about {
     box-sizing: border-box;
     flex-grow: 1;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   .footer-title {
     align-items: flex-start;

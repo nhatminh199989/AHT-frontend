@@ -6,6 +6,8 @@
   footer {
     width: 100%;
     padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
     .montserrat;
     background-color: @_black-0;
     box-sizing: border-box;
@@ -21,14 +23,14 @@
     }
 
     &-about {
-      .flex-cross--center;
+      .flex-cross--start;
       flex-direction: column;
       width: 100%;
       .montserrat;
     }
 
     &-title {
-      .flex-main--center;
+      // .flex-main--center;
       width: 80%;
       height: 48px;
       margin-bottom: 20px;
@@ -69,7 +71,7 @@
 
       &-left,
       &-right {
-        .flex-main--center;
+        .flex-main--start;
       }
 
       &-left {
@@ -219,9 +221,7 @@
     }
     &-about {
       box-sizing: border-box;
-      flex-grow: 1;
-      padding-left: 15px;
-      padding-right: 15px;
+      flex-grow: 1;      
     }
     &-title {
       align-items: flex-start;

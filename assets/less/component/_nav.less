@@ -79,10 +79,9 @@
     }
   }
 
-  .icon-container li:first-child{
+  .icon-container li:first-child {
     margin-right: 20px;
   }
-
 }
 
 @media screen and (min-width: 425px) {
@@ -117,7 +116,7 @@
 
     &-link {
       &__list {
-        .flex-main--between;
+        .flex-main--start;
         flex-direction: row;
         padding: 15px 30px;
         box-sizing: border-box;
@@ -143,7 +142,20 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
+  .menu {
+    &-container {
+      max-width: 985px;
+    }
+
+    &-link {
+      &__list {
+        li {
+          margin-right: 55px;
+        }
+      }
+    }
+  }
   nav {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -160,6 +172,22 @@
       &__element {
         cursor: pointer;
         font-size: 27px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .menu {
+    &-container {
+      max-width: 985px;
+    }
+
+    &-link {
+      &__list {
+        li {
+          margin-right: 55px;
+        }
       }
     }
   }
