@@ -116,7 +116,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
   }
   .logo-container {
     margin-bottom: 10px;
