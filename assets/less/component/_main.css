@@ -386,9 +386,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .product-card {
-    width: 100%;
-  }
   .product-summary {
     display: flex;
     flex-wrap: wrap;
