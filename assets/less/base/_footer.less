@@ -1,0 +1,414 @@
+/*......... Import source ..........*/
+@import '../source/_mixins.less';
+@import '../source/_typography.less';
+@import '../source/_variable.less';
+/*......... End import source ..........*/
+
+@media screen and (min-width:320px) {
+    footer {
+        width: 100%;
+        padding-top: 60px;
+
+        background-color: @black-0;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        &-up {
+            .flex-align-items-center;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            max-width: 1140px;
+            width: 100%;
+            box-sizing: border-box;
+            .montserrat;
+        }
+
+        &-about {
+            .flex-align-items-center;
+            max-width: 263px;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &-title {
+            .flex-main-center;
+            width: 80%;
+            height: 45px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            font-size: 16.4px;
+            text-transform: capitalize;
+            color: @white-1;
+            letter-spacing: 0.5px;
+        } 
+
+        &-info {
+            margin-bottom: 44px;
+
+            .opensans-regular;
+            color: @gray-1;
+            font-size: 14px;
+            line-height: 22.5px;
+            letter-spacing: 0.725px;
+        }
+
+        &-social {
+            width: 157px;
+            margin-bottom: 40px;
+            padding-left: 2px;
+
+            &-list {
+               .flex-space-between;
+            }
+        }
+
+        &-nav {
+            width: 100%;
+            max-width: 360px;
+            margin-bottom: 40px;
+            .flex-align-items-center;
+            flex-direction: column;
+
+            &-container {
+                .flex-space-between;
+                width: 100%;
+            }
+
+            &-left,
+            &-right {
+                .flex-main-center;
+            }
+
+            &-left{
+                width: 54%;
+            }
+
+            &-right{
+                width: 46%;
+            }
+        }
+
+        &-link,
+        &-social-link {
+            .opensans-regular;
+            color: @gray-5;
+            font-size: 14px;
+            text-transform: capitalize;
+
+            &:hover {
+                color: @white-0;
+                text-decoration: underline;
+            }
+        }
+
+        &-link{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        &-link:hover{
+            color: @white-0;
+            text-decoration: underline;
+        }
+
+        &-location {
+            width: 100%;
+            max-width: 262px;
+            .flex-align-items-center;
+            flex-direction: column;
+
+            &-container {
+                width: 100%;
+                .flex-align-items-start;
+                height: 125px;
+                font-size: 14px;
+            }
+
+            &-left,
+            &-right {
+               .flex-space-between;
+                flex-direction: column;
+                height: 100%; 
+            }
+
+            &-left {
+                width: 12%;
+            }
+
+            &-right {
+                width: 88%;
+                line-height: 30px;
+            }
+
+            &-phone {
+                margin-top: 22px;
+            }
+
+            &-address {
+                color: @gray-5;
+                width: 100%;
+                max-width: 200px;
+                margin-top: -1px;
+            }
+
+            &-phonenumber {
+                color: @gray-5;
+                width: 100%;
+                max-width: 200px;
+                margin-top: 2.5px;
+            }
+
+            &-mail {
+                color: @gray-5;
+                width: 100%;
+                max-width: 200px;
+                margin-top: 2px;
+            }
+
+            &-address:hover {
+                color: @white-0;
+                text-decoration: underline;
+            }
+
+            &-phonenumber:hover {
+                color: @white-0;
+                text-decoration: underline;
+            }
+
+            &-mail:hover {
+                color: @white-0;
+                text-decoration: underline;
+            }
+        }
+
+        &-down {
+            width: 100%;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            .flex-main-center;
+            margin-top: -1px;
+
+            &-container{
+                .flex-align-items-center;
+                flex-direction: column;
+                padding: 25px 10px 25px 10px;
+                max-width: 1140px;
+                width: 100%;
+
+                .opensans-regular;
+                color: @gray-1;
+                font-size: 14.75px;
+            }
+            
+            &-heart {
+                color: @red-0;
+            }
+
+            &-company {
+                color: @white-0;
+            }
+        }
+    }
+
+    .copy-right {
+        order: 2;
+        text-align: center;
+        letter-spacing: 0.2px;
+    }
+
+    .payment {
+        &-container {
+            margin-top: -5px;
+            width: 150px;
+            order: 1;
+        }
+
+        &-list {
+            .flex-space-arround;
+            font-size: 22px;
+
+            &-link:hover {
+                color: @white-0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:425px) {
+    .footer {
+        
+        &-up {
+            .flex-main-center;
+            flex-direction: row;
+        }
+
+        &-down {
+            &-container{
+                .flex-main-center;
+                row-gap: 15px;
+            }
+        }
+
+        &-about {
+            max-width: 100%;
+            flex-grow: 1;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        &-location {
+            &-left {
+                padding-top: 6px;
+                padding-bottom: 4px;
+            }
+
+            &-phone {
+                margin-top: 30px;
+            }
+
+            &-right {
+                height: 127px;
+            }
+        }
+
+        &-link {
+            .flex-main-center;
+        }
+    } 
+
+    .copy-right {
+        order: 2;
+    }
+
+    .payment {
+        &-container {
+            order: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {  
+    .footer {
+        &-up {
+            .flex-space-between;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &-down {
+            &-container{
+                .flex-space-between;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .copy-right {
+        padding-bottom: 0;
+        word-spacing: 2px;
+        font-size: 12px;
+        order: 1;
+    }
+
+    .payment {
+
+        &-container {
+            margin-bottom: 0;
+            order: 2;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        .flex-align-items-center;
+        flex-direction: column;
+    }
+
+    .footer {
+        &-up {
+            .flex-space-between;
+        }
+
+        &-about {
+            flex-direction: column;
+            max-width: 263px;
+            flex-grow: unset;
+        }
+
+     }   
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+
+        &-up {
+            .flex-space-between;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 5px;
+        }
+
+        &-title {
+            width: 100%;
+            .flex-start;
+        }
+
+        &-list {
+            width: 100%;
+            height: 200px;
+        }
+
+        &-link {
+            margin-top: 4px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            width: fit-content;
+            .flex-start;
+
+            font-size: 14px;
+         }
+
+        &-about {
+            .flex-align-items-start;
+            text-align: left;
+        }
+
+        &-nav {
+            margin-bottom: 10px;
+        }
+
+        &-location {
+            &-phone {
+                margin-top: 20px;
+            }
+
+            &-icon {
+                &-mail {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }   
+
+    .copy-right {
+        order: 1;
+        font-size: 14px;
+        // letter-spacing: .15px;
+    }
+
+    .payment {
+        &-container {
+            order: 2;
+            margin-bottom: 0;
+        }
+
+        &-list {
+            justify-content: space-between;
+            margin-right: 1px;
+            align-items: flex-start;
+        }
+    }
+}

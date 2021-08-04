@@ -1,14 +1,26 @@
-@import './global/_font.less';
-@import './global/_gereral.less';
+/*
+    1. Import source
+        1.1. mixins
+        1.2. variable
+        1.3. typography
+    2. Import base
+        1.1. default
+        1.2. nav
+        1.3. header
+        1.4. main
+        1.5. banner
+        1.6. blog
+        1.7. footer
+*/
+@import './source/_mixins.less';
+@import './source/_variable.less';
+@import './source/_typography.less';
 
-// header
-@import './component/_header.less';
-// navbar
-@import './component/_nav.less';
-// main
-@import './component/_main.less';
-//blog
-@import './component/_blog.less';
-//footer
-@import './component/_footer.less';
-
+@import './base/_default.less';
+@import './base/_nav.less';
+@import './base/_header.less';
+@import './base/_main.less';
+@import './base/_banner.less';
+@import './base/_product.less';
+@import './base/_blog.less';
+@import './base/_footer.less';

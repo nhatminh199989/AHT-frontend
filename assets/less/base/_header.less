@@ -1,0 +1,85 @@
+/*......... Import source ..........*/
+@import '../source/_mixins.less';
+@import '../source/_typography.less';
+@import '../source/_variable.less';
+/*......... End import source ..........*/
+
+@media screen and (min-width:320px) {
+
+    header {
+        .flex-main-center;
+        .opensans-regular;
+        padding: 12px 0;
+        color: @gray-2;
+        font-size: 12px;
+        background-color: @black-0;
+    }
+
+    .header {
+        &-left {
+            letter-spacing: 0.33px;
+        }
+        
+        &-right {
+            .opensans-regular;
+            .flex-space-arround;
+            width: 100%;
+            margin-top: 10px;
+            letter-spacing: 0.32px;
+        }
+
+        &-link {
+            // display: none;
+            text-transform: capitalize;
+            color: @gray-2;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        .flex-space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header {
+        &-right {
+            width: 250px;
+            margin-top: 0;
+        }
+
+        &-link {
+            &-element {
+                margin-right: 4px;
+                margin-left: 1px;
+            }
+
+            &-first {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    header {
+        font-size: 14px;
+    }
+
+    .header {
+        &-left {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    header {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+}

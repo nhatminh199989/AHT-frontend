@@ -555,7 +555,7 @@
     }
 
     var P = Object.freeze({
-        __proto__: null,
+        _proto_: null,
         getLocation: C,
         copyArray: k,
         clone: _,

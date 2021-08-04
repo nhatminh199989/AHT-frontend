@@ -1,14 +1,19 @@
-$(document).ready(function () {
+$(document).ready(()=>{
+    $('#menu-button').click(()=>{
+        $('.menu-nav').first().slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
   var data = {
     dots: true,
     infinite: true,
     arrows: false,
-    speed: 300,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
     variableWidth: true,
+    initialSlide:1
   };
   $(".blog-slider").slick(data);
 });
