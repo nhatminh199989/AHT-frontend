@@ -1,0 +1,276 @@
+/*......... Import source ..........*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+/*......... End import source ..........*/
+@media screen and (min-width: 320px) {
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 706px;
+    margin-top: 31px;
+    padding: 75px 10px 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-image: url('../../assets/image/blog-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .blog-container .feature-latest {
+    font-size: 10px;
+    color: #8262B5;
+    letter-spacing: 6px;
+    margin-left: 1px;
+    margin-top: 2px;
+  }
+  .blog-container .feature-news {
+    font-size: 20px;
+    letter-spacing: 2.3px;
+  }
+  .blog-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  .blog-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #FFF;
+    box-sizing: border-box;
+  }
+  .blog-image-container {
+    width: 100%;
+    max-width: 361px;
+    position: relative;
+    overflow: hidden;
+  }
+  .blog-calendar {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    z-index: 100;
+    background-color: #A1D1DD;
+    user-select: none;
+  }
+  .blog-calendar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FEFEFE;
+    text-transform: capitalize;
+    color: #FFF;
+    box-sizing: border-box;
+  }
+  .blog-month {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .blog-date {
+    font-size: 16px;
+  }
+  .blog-summary {
+    padding: 15px 15px 13px 15px;
+    border-bottom: 2px solid #EDEDED;
+    text-transform: none;
+  }
+  .blog-name {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 18px;
+    margin-top: 1px;
+    width: 100%;
+    padding-left: 5px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222;
+  }
+  .blog-name:hover {
+    color: #8262b5;
+  }
+  .blog-description {
+    width: 100%;
+    max-width: 321px;
+    padding-left: 5px;
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+  }
+  .blog-action {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 16px 20px 16px 22px;
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #C0C0C0;
+  }
+  .blog-comment {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .blog-slider {
+    width: 100%;
+    max-width: 768px;
+  }
+  .blog-card {
+    width: calc(calc(100vw/2) - 20px);
+  }
+  .blog-image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog-slider {
+    width: 100%;
+    max-width: 1024px;
+  }
+  .blog-card {
+    width: calc(calc(100vw/2) - 20px);
+  }
+  .blog-image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .blog-name {
+    font-size: 16px;
+  }
+  .blog-description {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blog-slider {
+    width: 100%;
+    max-width: 1140px;
+  }
+  .blog-card {
+    width: calc(calc(100vw/3) - 20px);
+    max-width: calc(calc(1140px/3) - 20px);
+  }
+  .blog-image-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .blog-container {
+    padding-top: 73px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+  }
+  .blog-container .feature-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .blog-container .feature-latest {
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: -5px;
+  }
+  .blog-container .feature-news {
+    padding-top: 12px;
+    padding-left: 2px;
+    font-size: 24px;
+    padding-bottom: 23px;
+  }
+  .blog-name {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  .blog-description {
+    font-size: 14px;
+  }
+  .blog-slider {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .blog-card {
+    width: 361px;
+  }
+  .blog-image-container {
+    height: 202px;
+  }
+  .blog-slider {
+    max-width: 1140px;
+    width: 100%;
+  }
+}

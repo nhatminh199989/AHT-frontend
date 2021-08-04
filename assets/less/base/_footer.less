@@ -8,17 +8,15 @@
     footer {
         width: 100%;
         padding-top: 60px;
-
         background-color: @black-0;
         box-sizing: border-box;
     }
 
     .footer {
         &-up {
-            .flex-align-items-center;
             flex-direction: column;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             max-width: 1140px;
             width: 100%;
             box-sizing: border-box;
@@ -26,19 +24,17 @@
         }
 
         &-about {
-            .flex-align-items-center;
             max-width: 263px;
             flex-direction: column;
             width: 100%;
         }
 
         &-title {
-            .flex-main-center;
+            .flex-align-items-start;
             width: 80%;
             height: 45px;
             margin-bottom: 24px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
             font-size: 16.4px;
             text-transform: capitalize;
             color: @white-1;
@@ -47,7 +43,6 @@
 
         &-info {
             margin-bottom: 44px;
-
             .opensans-regular;
             color: @gray-1;
             font-size: 14px;
@@ -69,9 +64,7 @@
             width: 100%;
             max-width: 360px;
             margin-bottom: 40px;
-            .flex-align-items-center;
             flex-direction: column;
-
             &-container {
                 .flex-space-between;
                 width: 100%;
@@ -79,7 +72,7 @@
 
             &-left,
             &-right {
-                .flex-main-center;
+                // .flex-main-center;
             }
 
             &-left{
@@ -117,7 +110,6 @@
         &-location {
             width: 100%;
             max-width: 262px;
-            .flex-align-items-center;
             flex-direction: column;
 
             &-container {
@@ -214,7 +206,6 @@
 
     .copy-right {
         order: 2;
-        text-align: center;
         letter-spacing: 0.2px;
     }
 
@@ -255,7 +246,6 @@
             max-width: 100%;
             flex-grow: 1;
             box-sizing: border-box;
-            text-align: center;
         }
 
         &-location {
@@ -271,10 +261,6 @@
             &-right {
                 height: 127px;
             }
-        }
-
-        &-link {
-            .flex-main-center;
         }
     } 
 
@@ -373,7 +359,6 @@
 
         &-about {
             .flex-align-items-start;
-            text-align: left;
         }
 
         &-nav {

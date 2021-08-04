@@ -1,0 +1,388 @@
+/*......... Import source ..........*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+/*......... End import source ..........*/
+@media screen and (min-width: 320px) {
+  footer {
+    width: 100%;
+    padding-top: 60px;
+    background-color: #222;
+    box-sizing: border-box;
+  }
+  .footer-up {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+  }
+  .footer-about {
+    max-width: 263px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 80%;
+    height: 45px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16.4px;
+    text-transform: capitalize;
+    color: #F7F7F7;
+    letter-spacing: 0.5px;
+  }
+  .footer-info {
+    margin-bottom: 44px;
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #888;
+    font-size: 14px;
+    line-height: 22.5px;
+    letter-spacing: 0.725px;
+  }
+  .footer-social {
+    width: 157px;
+    margin-bottom: 40px;
+    padding-left: 2px;
+  }
+  .footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-nav {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .footer-nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-nav-left {
+    width: 54%;
+  }
+  .footer-nav-right {
+    width: 46%;
+  }
+  .footer-link,
+  .footer-social-link {
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #828282;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .footer-link:hover,
+  .footer-social-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .footer-link {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .footer-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .footer-location {
+    width: 100%;
+    max-width: 262px;
+    flex-direction: column;
+  }
+  .footer-location-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 125px;
+    font-size: 14px;
+  }
+  .footer-location-left,
+  .footer-location-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+  .footer-location-left {
+    width: 12%;
+  }
+  .footer-location-right {
+    width: 88%;
+    line-height: 30px;
+  }
+  .footer-location-phone {
+    margin-top: 22px;
+  }
+  .footer-location-address {
+    color: #828282;
+    width: 100%;
+    max-width: 200px;
+    margin-top: -1px;
+  }
+  .footer-location-phonenumber {
+    color: #828282;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 2.5px;
+  }
+  .footer-location-mail {
+    color: #828282;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 2px;
+  }
+  .footer-location-address:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .footer-location-phonenumber:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .footer-location-mail:hover {
+    color: #FFF;
+    text-decoration: underline;
+  }
+  .footer-down {
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1px;
+  }
+  .footer-down-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 25px 10px;
+    max-width: 1140px;
+    width: 100%;
+    font-family: OpenSans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #888;
+    font-size: 14.75px;
+  }
+  .footer-down-heart {
+    color: #FF4628;
+  }
+  .footer-down-company {
+    color: #FFF;
+  }
+  .copy-right {
+    order: 2;
+    letter-spacing: 0.2px;
+  }
+  .payment-container {
+    margin-top: -5px;
+    width: 150px;
+    order: 1;
+  }
+  .payment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 22px;
+  }
+  .payment-list-link:hover {
+    color: #FFF;
+  }
+}
+@media screen and (min-width: 425px) {
+  .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .footer-down-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .footer-about {
+    max-width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  .footer-location-left {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+  .footer-location-phone {
+    margin-top: 30px;
+  }
+  .footer-location-right {
+    height: 127px;
+  }
+  .copy-right {
+    order: 2;
+  }
+  .payment-container {
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer-down-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .copy-right {
+    padding-bottom: 0;
+    word-spacing: 2px;
+    font-size: 12px;
+    order: 1;
+  }
+  .payment-container {
+    margin-bottom: 0;
+    order: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer-about {
+    flex-direction: column;
+    max-width: 263px;
+    flex-grow: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+  .footer-title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer-list {
+    width: 100%;
+    height: 200px;
+  }
+  .footer-link {
+    margin-top: 4px;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+  .footer-about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .footer-nav {
+    margin-bottom: 10px;
+  }
+  .footer-location-phone {
+    margin-top: 20px;
+  }
+  .footer-location-icon-mail {
+    margin-bottom: 5px;
+  }
+  .copy-right {
+    order: 1;
+    font-size: 14px;
+  }
+  .payment-container {
+    order: 2;
+    margin-bottom: 0;
+  }
+  .payment-list {
+    justify-content: space-between;
+    margin-right: 1px;
+    align-items: flex-start;
+  }
+}

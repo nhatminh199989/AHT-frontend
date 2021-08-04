@@ -221,7 +221,7 @@ button {
     margin-bottom: 0;
   }
   .icon-nav {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -263,19 +263,22 @@ button {
 }
 @media screen and (min-width: 1440px) {
   .nav-top-cart .cart {
-    margin-top: 10px;
-    margin-right: 15px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: -10px;
   }
   nav {
     font-weight: bold;
     padding-top: 6px;
     padding-bottom: 6px;
+    padding-left: 30px;
   }
   .logo-nav {
     margin-bottom: 0;
+    margin-top: 4px;
   }
   .icon-nav {
-    width: 222px;
+    width: 240px;
   }
   .icon-link-element {
     font-size: 27px;
@@ -632,6 +635,9 @@ button {
 /*......... Import source ..........*/
 /*......... End import source ..........*/
 @media screen and (min-width: 320px) {
+  .payment-container {
+    margin-bottom: 10px;
+  }
   .product-container {
     overflow-x: hidden;
   }
@@ -673,9 +679,6 @@ button {
     color: #8262B5;
   }
   .product-summary {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
     text-transform: none;
   }
@@ -708,6 +711,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-self: flex-start;
     width: 50%;
   }
   .product-cost-old {
@@ -725,7 +729,7 @@ button {
   .product-card {
     width: 50%;
     padding: 0 15px;
-    padding: 0 15px 0 0;
+    padding: 0 0 0 15px;
     box-sizing: border-box;
   }
 }
@@ -737,7 +741,7 @@ button {
     width: 25%;
     padding: 0 15px;
     box-sizing: border-box;
-    padding: 0 15px 0 0;
+    padding: 0 0 0 15px;
   }
   .product-name {
     font-family: OpenSans, sans-serif;
@@ -759,6 +763,7 @@ button {
   }
   .product-cost-old {
     font-size: 12px;
+    padding-right: 2px;
   }
   .product-cost-new {
     color: #8262B5;
@@ -767,7 +772,6 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .product-image-img {
-    height: 324px;
     width: 100%;
   }
   .product-card {
@@ -804,6 +808,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-content: flex-start;
     width: 50%;
   }
   .product-cost-old {
@@ -811,6 +816,7 @@ button {
     font-weight: 400;
     text-decoration: line-through;
     font-size: 15px;
+    padding-right: 2px;
   }
   .product-cost-new {
     color: #8262B5;
@@ -822,6 +828,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .product-image-img {
+    height: 324px;
   }
   .product-image-container {
     margin-bottom: 15px;
@@ -865,6 +874,7 @@ button {
     box-sizing: border-box;
     background-image: url('../../assets/image/blog-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .blog-container .feature-latest {
     font-size: 10px;
@@ -888,13 +898,14 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: #FFF;
     box-sizing: border-box;
   }
   .blog-image-container {
     width: 100%;
     max-width: 361px;
-    height: 150px;
     position: relative;
     overflow: hidden;
   }
@@ -936,6 +947,7 @@ button {
   }
   .blog-name {
     font-family: OpenSans, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 16px;
     margin-bottom: 18px;
@@ -979,34 +991,28 @@ button {
 }
 @media screen and (min-width: 425px) {
   .blog-slider {
-    max-width: 100%;
+    width: 100%;
+    max-width: 768px;
   }
   .blog-card {
-    width: 361px;
-    max-width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: calc(calc(100vw/2) - 20px);
   }
   .blog-image-container {
     width: 100%;
-    max-width: 361px;
-    height: 202px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .blog-slider {
-    max-width: 720px;
+    width: 100%;
+    max-width: 1024px;
   }
   .blog-card {
-    width: 350px;
-    max-width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: calc(calc(100vw/2) - 20px);
   }
   .blog-image-container {
     width: 100%;
-    max-width: 350px;
-    height: 202px;
+    max-width: 100%;
   }
   .blog-name {
     font-size: 16px;
@@ -1017,18 +1023,16 @@ button {
 }
 @media screen and (min-width: 1024px) {
   .blog-slider {
-    max-width: 980px;
+    width: 100%;
+    max-width: 1140px;
   }
   .blog-card {
-    width: 310px;
-    max-width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: calc(calc(100vw/3) - 20px);
+    max-width: calc(calc(1140px/3) - 20px);
   }
   .blog-image-container {
     width: 100%;
-    max-width: 361px;
-    height: 180px;
+    max-width: 100%;
   }
   .blog-container {
     padding-top: 73px;
@@ -1076,6 +1080,7 @@ button {
   }
   .blog-slider {
     max-width: 1140px;
+    width: 100%;
   }
 }
 /*......... Import source ..........*/
@@ -1088,21 +1093,15 @@ button {
     box-sizing: border-box;
   }
   .footer-up {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 1140px;
     width: 100%;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
   }
   .footer-about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     max-width: 263px;
     flex-direction: column;
     width: 100%;
@@ -1110,7 +1109,7 @@ button {
   .footer-title {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-start;
     width: 80%;
     height: 45px;
     margin-bottom: 24px;
@@ -1144,9 +1143,6 @@ button {
     width: 100%;
     max-width: 360px;
     margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
   }
   .footer-nav-container {
@@ -1154,12 +1150,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-  }
-  .footer-nav-left,
-  .footer-nav-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   .footer-nav-left {
     width: 54%;
@@ -1192,9 +1182,6 @@ button {
   .footer-location {
     width: 100%;
     max-width: 262px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     flex-direction: column;
   }
   .footer-location-container {
@@ -1283,7 +1270,6 @@ button {
   }
   .copy-right {
     order: 2;
-    text-align: center;
     letter-spacing: 0.2px;
   }
   .payment-container {
@@ -1301,7 +1287,42 @@ button {
     color: #FFF;
   }
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 425px) {
+  .footer-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .footer-down-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .footer-about {
+    max-width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  .footer-location-left {
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+  .footer-location-phone {
+    margin-top: 30px;
+  }
+  .footer-location-right {
+    height: 127px;
+  }
+  .copy-right {
+    order: 2;
+  }
+  .payment-container {
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-up {
     display: flex;
     flex-wrap: wrap;
@@ -1315,35 +1336,6 @@ button {
     justify-content: space-between;
     flex-direction: row;
   }
-  .footer-about {
-    max-width: 100%;
-    flex-grow: 1;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .footer-location-left {
-    padding-top: 6px;
-    padding-bottom: 4px;
-  }
-  .footer-location-phone {
-    margin-top: 30px;
-  }
-  .footer-location-right {
-    height: 127px;
-  }
-  .footer-link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .copy-right {
-    order: 1;
-  }
-  .payment-container {
-    order: 2;
-  }
-}
-@media screen and (min-width: 768px) {
   .copy-right {
     padding-bottom: 0;
     word-spacing: 2px;
@@ -1406,10 +1398,15 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    text-align: left;
   }
   .footer-nav {
     margin-bottom: 10px;
+  }
+  .footer-location-phone {
+    margin-top: 20px;
+  }
+  .footer-location-icon-mail {
+    margin-bottom: 5px;
   }
   .copy-right {
     order: 1;
