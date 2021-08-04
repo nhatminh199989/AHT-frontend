@@ -308,19 +308,46 @@
   }
 }
 @media screen and (min-width: 640px) {
+  .banner-left-container {
+    line-height: 0;
+    margin-bottom: 30px;
+  }
+  .banner-left-content {
+    line-height: normal;
+  }
+  .banner-right-bottom-content {
+    line-height: normal;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-right-top-content {
+    line-height: normal;
+  }
+  .banner-right-item-container-up {
+    line-height: 0;
+  }
+  .banner-image {
+    margin-bottom: 0;
+  }
   .banner-left {
     width: 100%;
   }
   .banner-right {
+    display: initial;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
   .banner-right-item {
     width: 50%;
     padding: 0 15px;
     box-sizing: border-box;
+  }
+  .banner-right-item-down {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  .banner-right-item-down img {
+    position: absolute;
   }
   .product-card {
     margin-bottom: 43px;
@@ -335,6 +362,26 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .banner-left-container {
+    margin: 0;
+  }
+  .banner-left {
+    width: 100%;
+  }
+  .banner-right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .banner-right-item {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .banner-right-item-down img {
+    position: initial;
+  }
   .row {
     margin: 0 -15px;
   }
